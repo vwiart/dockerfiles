@@ -1,0 +1,4 @@
+nginx-proxy/conf.d/blog.synapps.io.conf
+nginx-proxy/conf.d/static.synapps.io.conf
+nginx-proxy/conf.d/synapps.io.conf
+nginx-proxy/conf.d/varg.xyz.conf

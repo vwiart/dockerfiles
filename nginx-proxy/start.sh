@@ -7,5 +7,7 @@ sudo docker run -d \
 	-v $(pwd)/static:/var/www/html/static \
 	--link wordpress-blue \
 	--link synapps-io \
+	--link synapps-ambari \
+	--link hadoop \
 	--name $DOCKER_TAG \
 	-t $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION
