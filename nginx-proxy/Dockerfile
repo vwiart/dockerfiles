@@ -6,8 +6,8 @@ ENV LOCAL_GROUP=nginx
 
 RUN groupadd $LOCAL_GROUP && \
 	useradd -ms /bin/bash $LOCAL_USER -g $LOCAL_GROUP && \
-	apt-get update && \
-	apt-get upgrade && \
+	apt-get update -y && \
+	apt-get upgrade -y && \
 	apt-get install -y nginx && \
 	rm -Rf /etc/nginx/sites-available && \
 	rm -Rf /etc/nginx/sites-enabled && \
