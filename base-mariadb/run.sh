@@ -1,0 +1,3 @@
+#!/bin/bash
+. ./env.sh
+sudo docker run --name $DOCKER_TAG -e MYSQL_ROOT_PASSWORD=$MARIADB_PASSWD -d $DOCKER_IMAGE_NAME:$DOCKER_IMAGE_VERSION
